@@ -4,21 +4,26 @@ html
     meta(charset='utf-8')
     title
     meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
     link(rel='stylesheet', type='text/css', href='css/hexagons.css')
     link(href='https://fonts.googleapis.com/css?family=Raleway:300', rel='stylesheet', type='text/css')
   body
     br
     br
-    ul#hexGrid
-      li.hex
-        .hexIn
-          a.hexLink(href='#')
-            img(src='images/vote.png', alt='')
-      li.hex
-        .hexIn
-          a.hexLink(href='#')
-            img(src='images/abhinav.jpg', alt='')
-      li.hex
-        .hexIn
-          a.hexLink(href='#')
-            img(src='images/for.png', alt='')
+    .container
+      .col-md-8.col-md-offset-2
+        ul#hexGrid
+          li.hex
+            .hexIn
+              a.hexLink(href='#')
+                img(src='images/vote.png', alt='')
+          li.hex
+            .hexIn
+              a.hexLink(href='#')
+                img(src='images/abhinav.jpg', alt='')
+          li.hex
+            .hexIn
+              a.hexLink(href='#')
+                img(src='images/for.png', alt='')
+
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa', crossorigin='anonymous')
