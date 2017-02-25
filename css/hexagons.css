@@ -3,7 +3,28 @@
     padding: 0;
 }
 body {
+    background: #f2c643;
+    font-family: 'Montserrat',Arial,sans-serif;
+}
+.bg-light {
     background: #fff;
+}
+.no-margin {
+  margin-top: 0px;
+}
+.radius {
+  border-radius: 25px 25px 25px 25px;
+  border: 7px solid #231f20;
+}
+.pad {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.txt-primary {
+    color: #f2c643;
+}
+.bg-dark {
+  background-color: #231f20;
 }
 #hexGrid {
   display: flex;
