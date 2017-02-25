@@ -12,6 +12,9 @@ body {
 .no-margin {
   margin-top: 0px;
 }
+.image {
+  max-width: 100%;
+}
 .radius {
   border-radius: 25px 25px 25px 25px;
   border: 7px solid #231f20;
