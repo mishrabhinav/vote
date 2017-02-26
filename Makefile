@@ -33,5 +33,18 @@ deploy: build
 		fi
 	cd ..
 
+deploy_https: build
+	rm -rf build/.git
+	rsync -rupE .gitlab-ci.yml build/
+	git -C build init .
+	git -C build fetch "git@gitlab.com:Mishrabhinav/vote.git" master
+	git -C build reset --soft FETCH_HEAD
+	git -C build add .
+	if ! git -C build diff-index --quiet HEAD ; then \
+		git -C build commit -m "Deploy mishrabhinav/vote@${HEAD_REV}" && \
+		git -C build push "git@gitlab.com:Mishrabhinav/vote.git" master:master ; \
+		fi
+	cd ..
+
 clean:
 	rm -rf ./build
