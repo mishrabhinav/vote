@@ -6,6 +6,12 @@ body {
     background: #f2c643;
     font-family: 'Montserrat',Arial,sans-serif;
 }
+a {
+    color: #231f20;
+}
+a:hover {
+    color: #f2c643;
+}
 .bg-light {
     background: #fff;
 }
